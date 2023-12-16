@@ -1,0 +1,13 @@
+.map {
+  width: 100%;
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+  }
+}

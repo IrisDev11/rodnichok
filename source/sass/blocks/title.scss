@@ -1,0 +1,43 @@
+.title {
+  margin: 0;
+
+  color: $color-paragraph-primary;
+  font-weight: 700;
+
+  &--h1 {
+    font-size: 32px;
+
+    line-height: 36px;
+
+    @include vp-1024 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &--h2 {
+    font-size: 24px;
+    line-height: 28px;
+
+    @include vp-1024 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  &--h3 {
+    font-size: 20px;
+    line-height: 24px;
+
+    @include vp-1280 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &--h4 {
+    color: $color-text-title;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

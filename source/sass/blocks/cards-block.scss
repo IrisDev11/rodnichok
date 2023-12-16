@@ -1,0 +1,32 @@
+.cards-block {
+  @include vp-1024 {
+    padding: 72px 0 0;
+  }
+
+  @include vp-1280 {
+    padding: 72px 0;
+  }
+
+  &__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    row-gap: 12px;
+
+    list-style: none;
+
+    @include vp-768 {
+      grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+      gap: 24px;
+    }
+
+    @include vp-1024 {
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    }
+
+    @include vp-1280 {
+      grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+
+    }
+  }
+}

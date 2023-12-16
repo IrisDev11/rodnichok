@@ -1,0 +1,13 @@
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &__item {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}

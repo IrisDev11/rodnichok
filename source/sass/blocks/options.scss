@@ -1,0 +1,18 @@
+.options {
+  background-color: $color-bg-black-5;
+  border-radius: 32px;
+
+  &__list {
+    display: grid;
+    row-gap: 16px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @include vp-1280 {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  }
+}

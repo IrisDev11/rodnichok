@@ -1,0 +1,121 @@
+.news {
+  padding: 64px 0;
+
+  @include vp-1024 {
+    padding: 72px 0;
+  }
+
+  &__title {
+    max-width: 1280px;
+    padding: 0 12px;
+    margin: 0 auto 32px;
+
+    @include vp-768 {
+      padding: 0 24px;
+    }
+
+    @include vp-1024 {
+      padding: 0 40px;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1200px;
+    padding: 0 12px;
+    margin: 0 auto;
+
+    @include vp-768 {
+      padding: 0 24px;
+    }
+
+    @include vp-1024 {
+      padding: 0 40px;
+    }
+
+    @include vp-1280 {
+      padding: 0;
+    }
+  }
+
+  &__list {
+    margin-bottom: 24px;
+
+    @include vp-1280 {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+    border: 1px solid $color-bg-black-20;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+
+    cursor: pointer;
+
+    @include vp-1280 {
+      display: flex;
+    }
+
+    @include hover-focus {
+      background-color: $color-bg-black-5;
+      border: 1px solid $color-bg-black-10;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    @include active {
+      background-color: $color-bg-black-10;
+      border: 1px solid $color-bg-black-10;
+    }
+  }
+
+  &__btn--next {
+    right: -40px;
+    z-index: 100;
+  }
+
+  &__btn--prev {
+    left: -40px;
+    z-index: 100;
+
+    .news__btn-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .swiper-pagination-bullet {
+      width: 24px;
+      height: 4px;
+      margin-left: 4px;
+      margin-right: 4px;
+
+      border-radius: 8px;
+      border: none;
+      background-color: $color-bg-blue-10;
+
+      cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 40px;
+      background-color: $color-brand-primary;
+    }
+  }
+}

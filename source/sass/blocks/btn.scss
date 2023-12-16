@@ -1,0 +1,84 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 16px;
+
+  color: $color-text-title;
+  font-weight: 500;
+  line-height: 20px;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color $trans-default;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+  &--border {
+    background-color: $color-default-white;
+    border: 1px solid $color-brand-primary;
+
+    @include hover-focus {
+      background-color: #E6F8FB;
+    }
+
+    @include active {
+      background-color: #CDF1F8;
+    }
+  }
+
+  &--primary {
+    color: $color-default-white;
+
+    background-color: $color-brand-primary;
+
+    @include hover-focus {
+      background-color: #0595AE;
+    }
+
+    @include active {
+      background-color: #047083;
+    }
+  }
+
+  &--tertiary {
+    color: $color-text-blue;
+
+    background-color: $color-bg-blue;
+
+    @include hover-focus {
+      background-color: $color-bg-blue-10;
+    }
+
+    @include active {
+      background-color: $color-bg-blue-10;
+    }
+  }
+
+  &--secondary {
+    color: $color-paragraph-primary;
+
+    background-color: $color-bg-black-10;
+
+    @include hover-focus {
+      background-color: $color-bg-black-20;
+    }
+
+    @include active {
+      background-color: $color-bg-black-40;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,174 @@
+.main-nav {
+  display: none;
+  width: 100%;
+
+  @include vp-1024 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  @include vp-1280 {
+    order: 6;
+    width: 100%;
+  }
+
+  &__list {
+    // display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    // @include vp-1024 {
+    //   flex-wrap: wrap;
+    // }
+
+    @include vp-1280 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border-bottom: 1px solid $color-bg-black-10;
+
+    @include vp-1024 {
+      flex-shrink: 0;
+      border-bottom: none;
+    }
+
+    @include vp-1280 {
+      width: 171px;
+    }
+
+    &:hover {
+      .main-nav__link + .submenu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 0;
+
+    color: $color-text-title;
+    font-size: 16px;
+    font-weight: 500;
+
+    background-color: transparent;
+
+    transition: background-color $trans-default color $trans-default;
+
+    @include vp-1024 {
+      padding: 12px 16px;
+      color: $color-paragraph-secondary;
+    }
+
+    @include vp-1280 {
+      justify-content: center;
+
+      padding: 12px 16px;
+    }
+
+    @include hover-focus {
+      background-color: $color-brand-light;
+    }
+
+    @include active {
+      background-color: $color-brand-dark;
+    }
+
+    &.is-active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+
+        background-color: $color-brand-primary;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+  .more {
+    position: relative;
+  }
+
+  .more__btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+
+    color: $color-text-blue;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    background-color: $color-default-white;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color $trans-default;
+
+    @include hover-focus {
+      background-color: $color-brand-light;
+    }
+
+    @include active {
+      background-color: $color-brand-dark;
+    }
+
+    @include vp-1024 {
+      display: flex;
+    }
+
+    @include vp-1280 {
+      display: none;
+    }
+  }
+
+  .more:hover {
+    .more__list {
+      display: flex;
+    }
+  }
+
+  .more__list {
+    display: none;
+
+    @include vp-1024 {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      // display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
