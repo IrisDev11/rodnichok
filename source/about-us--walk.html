@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Санаторий «Родничок»">
+  <title>Санаторий «Родничок»</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <button class="header__nav-toggle btn" type="button">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-menu-toggle"></use>
+          </svg>
+          <span class="btn__text">Меню</span>
+        </button>
+        <a href="#" class="header__logo">
+          <img class="header__logo-img" src="img/logo.png" width="56" height="56" alt="Логотип санатория Родничок.">
+          <h1 class="header__logo-title">Санаторий «Родничок»</h1>
+        </a>
+        <a class="header__user-link header__user-link--map btn btn--secondary" href="#map">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+          </svg>
+          <span class="btn__text btn__text--hidden">Как добраться</span>
+        </a>
+        <a class="header__user-link header__user-link--phone btn btn--secondary" href="tel:73422582800">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <span class="btn__text btn__text--hidden">+7 342 258-28-00</span>
+        </a>
+        <a class="header__user-link header__user-link--account btn btn--secondary" href="#">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="btn__text">Личный кабинет</span>
+        </a>
+        <a class="header__user-link header__user-link--feedback btn btn--primary" href="#">Задать вопрос</a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                О санатории
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Питание</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Развлечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Как добарться</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Вопрос-ответ</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Отзывы</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Транфсер</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Информация</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Лицензии</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Лечение
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Виды лечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Показания для лечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Программы лечения</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Проживание
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Подпункт</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Цены
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Подпункт</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Бронирование</a>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Акции и новости</a>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+
+          </ul>
+          <div class="more">
+            <button class="more__btn" type="button">
+              <span>Ещё</span>
+              <svg class="btn__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+            <ul class="more__list"></ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content page-content--about-walk">
+      <section class="intro intro--about-us intro--about-us-walk">
+        <div class="intro__bg">
+          <img class="intro__bg-img" src="img/bg-intro-walk.png" width="1440" height="600" alt="Фотография санатория.">
+        </div>
+        <div class="container">
+          <h2 class="title title--h1 intro__title">Прогулки на лошадях</h2>
+        </div>
+      </section>
+      <div class="breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="about-us.html" class="breadcrumb__link">О санатории</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="about-us--rest.html" class="breadcrumb__link">Отдых и услуги</a>
+            </li>
+            <li class="breadcrumb__item is-active">
+              <a href="about-us--walk.html" class="breadcrumb__link">Прогулки на лошадях</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="text-content">
+        <div class="container">
+          <div class="text-content__wrap">
+            <p>Вы&nbsp;можете провести время с&nbsp;пользой, воспользовавшись уникальной услугой&nbsp;&mdash; прогулкой на&nbsp;лошадях. Прогулки с&nbsp;этими милыми и&nbsp;добрыми животными доставят вам настоящее удовольствие.</p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-block">=
+        <div class="container">
+          <div class="gallery">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-1.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-2.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-3.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-4.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-5.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="video-player" data-video="video-player">
+                  <div class="video-player__wrap" data-video="player" data-video-id="YjS2uEJ78T4"></div>
+                  <div class="video-player__overlay" data-video="overlay">
+                    <img src="img/gallery/gallery-video-promo.png" width="384" height="256" alt="Фото видео">
+                    <button class="video-player__btn" type="button" data-video="button-play">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="img/logo-footer.png" alt="Логотип санатория Родничок.">
+          <h2 class="footer__logo-title">Санаторий Родничок</h2>
+        </div>
+        <address class="footer__address">
+          <p class="footer__address-text">Пермский край, Суксунский район, село Ключи, ул. Заречная, 11</p>
+          <a class="footer__phone" href="tel:73422582800">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +7 342 258-28-00
+          </a>
+          <a class="footer__mail" href="mailto:lokkluchi@yandex.ru">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <span class="visually-hidden">lokkluchi@yandex.ru</span>
+          </a>
+          <a class="footer__chat" href="#">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="visually-hidden">Перейти в чат</span>
+          </a>
+        </address>
+        <a class="footer__vk-link" href="#">
+          <svg class="footer__icon footer__icon--vk" width="32" height="32">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
+          Присоединяйтесь к нам
+        </a>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">О санатории</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Питание</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Развлечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Как добарться</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Вопрос-ответ</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Отзывы</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Транфсер</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Информация</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Лицензии</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Лечение</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Виды лечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Показания для лечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Программы лечения</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Проживание</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Корпусы</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Номера</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Цены</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Дата — 1</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Дата - N</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Бронирование</a>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Акции и новости</a>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Контакты</a>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
