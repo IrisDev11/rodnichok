@@ -1,38 +1,3 @@
-/*
-  const playBtns = document.querySelectorAll('[data-video-btn]');
-  const initVideoPlasy = () => {
-    if (!playBtns.length) {
-      return;
-    }
-
-    playBtns.forEach((btn) => {
-      const videoWrp = btn.closest('[data-video-wrp]');
-      const video = videoWrp ? videoWrp.querySelector('.video-player__wrap') : null;
-      const videoPlaceholder = videoWrp ? videoWrp.querySelector('.video-player__placeholder') : null;
-
-      btn.addEventListener('click', () => {
-        if (videoWrp) {
-          btn.classList.add('is-hidden');
-          videoPlaceholder.classList.add('is-hidden');
-          // video.play();
-          video.addEventListener('ended', () => {
-            btn.classList.remove('is-hidden');
-            videoPlaceholder.classList.remove('is-hidden');
-          }, {once: true});
-        }
-      });
-
-      if (video) {
-        video.addEventListener('play', () => {
-          btn.classList.add('is-hidden');
-          videoPlaceholder.classList.add('is-hidden');
-        });
-      }
-    });
-  };
-
-  export {initVideoPlay};
-*/
 const initVideoPlay = () => {
   const videoPlayer = document.querySelector('[data-video="video-player"]');
 
