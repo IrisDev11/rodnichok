@@ -1,0 +1,33 @@
+.contacts-section {
+  padding: 0 0 72px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title--h1 {
+    margin: 0 0 40px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include vp-768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-1024 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include vp-1280 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
