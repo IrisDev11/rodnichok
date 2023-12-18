@@ -29,4 +29,16 @@
 
     }
   }
+
+  &--about-us-rest {
+    padding: 0 0 70px;
+
+    @include vp-1280 {
+      padding: 0 0 70px;
+    }
+
+    .title {
+      margin: 0 0 40px;
+    }
+  }
 }

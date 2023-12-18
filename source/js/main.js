@@ -8,6 +8,7 @@ import {initToggleClassCard} from './modules/init-toggle-class-card';
 import {initTabs} from './modules/init-tabs';
 import {initNavModules} from './modules/init-resize-nav';
 import {initMoreNav} from './modules/init-more-nav';
+import {initVideoPlay} from './modules/init-video-play';
 
 // ---------------------------------
 
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initNavModules();
     initMoreNav();
+    initVideoPlay();
   });
 });
 
