@@ -1,0 +1,48 @@
+.text-content {
+  &__wrap {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto 64px;
+
+    @include vp-1024 {
+      margin: 0 auto 72px;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: $color-paragraph-primary;
+    margin: 0 0 32px;
+
+    @include vp-1280 {
+      margin: 0 0 24px;
+    }
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
