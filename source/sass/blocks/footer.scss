@@ -1,5 +1,5 @@
 .footer {
-  margin-top: -31px;
+  // margin-top: -31px;
   padding: 64px 0;
 
   color: $color-default-white;
@@ -8,12 +8,15 @@
   background-color: $color-brand-primary;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
 
-  @include vp-1024 {
-    margin-top: -32px;
-  }
+  // @include vp-1024 {
+  //  margin-top: -36px;
+  // }
 
-  @include vp-1280 {
-    padding: 81px 0;
+  &--top-margin {
+    margin-top: -31px;
+
+  @include vp-1024 {
+    margin-top: -36px;
   }
 
   .container {

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Санаторий «Родничок»">
+  <title>Санаторий «Родничок»</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <button class="header__nav-toggle btn" type="button">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-menu-toggle"></use>
+          </svg>
+          <span class="btn__text">Меню</span>
+        </button>
+        <a href="#" class="header__logo">
+          <img class="header__logo-img" src="img/logo.png" width="56" height="56" alt="Логотип санатория Родничок.">
+          <h1 class="header__logo-title">Санаторий «Родничок»</h1>
+        </a>
+        <a class="header__user-link header__user-link--map btn btn--secondary" href="#map">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+          </svg>
+          <span class="btn__text btn__text--hidden">Как добраться</span>
+        </a>
+        <a class="header__user-link header__user-link--phone btn btn--secondary" href="tel:73422582800">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <span class="btn__text btn__text--hidden">+7 342 258-28-00</span>
+        </a>
+        <a class="header__user-link header__user-link--account btn btn--secondary" href="#">
+          <svg class="btn__icon" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="btn__text">Личный кабинет</span>
+        </a>
+        <a class="header__user-link header__user-link--feedback btn btn--primary" href="#">Задать вопрос</a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                О санатории
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Питание</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Развлечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Как добарться</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Вопрос-ответ</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Отзывы</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Транфсер</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Информация</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Лицензии</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Лечение
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Виды лечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Показания для лечения</a>
+
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Программы лечения</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Проживание
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Подпункт</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Цены
+                <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
+                  <use xlink:href="img/sprite.svg#icon-down"></use>
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Подпункт</a>
+
+              </ul>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Бронирование</a>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Акции и новости</a>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+
+          </ul>
+          <div class="more">
+            <button class="more__btn" type="button">
+              <span>Ещё</span>
+              <svg class="btn__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+            <ul class="more__list"></ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="intro">
+        <div class="intro__bg">
+          <img class="intro__bg-img" src="img/bg-intro-food.png" width="1440" height="600" alt="Фотография санатория.">
+        </div>
+        <div class="container">
+          <h2 class="title title--h1 intro__title">Здоровье — это самое ценное!</h2>
+          <p class="intro__text">Правильное питание&nbsp;&mdash; основа здоровья. Согласно статистике Всемирной Организации Здравоохранения, продолжительность и&nbsp;качество жизни человека на&nbsp;60% определяет тот образ жизни, который он&nbsp;ведёт, и&nbsp;то, как он&nbsp;питается.</p>
+        </div>
+      </section>
+      <div class="breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">О санатории</a>
+            </li>
+            <li class="breadcrumb__item is-active">
+              <a href="#" class="breadcrumb__link">Питание</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="text-content">
+        <div class="container">
+          <div class="text-content__wrap">
+            <h3>Здоровое питание</h3>
+            <p>Важную роль в&nbsp;лечебном процессе играет правильное и&nbsp;рациональное питание. Питание в&nbsp;столовой корпуса &laquo;Родничок&raquo; четырехразовое (завтрак, обед, полдник, ужин) по&nbsp;заказной системе. Заказная система питания, организована на&nbsp;основе недельного меню, выбор из&nbsp;каждой группы три наименования. Для большинства болезней предназначена специальная диета. &laquo;Меню-заказ&raquo; создаётся на&nbsp;основе рекомендованных диет.</p>
+            <p>Правильное питание&nbsp;&mdash; основа здоровья. Согласно статистике Всемирной Организации Здравоохранения, продолжительность и&nbsp;качество жизни человека на&nbsp;60% определяет тот образ жизни, который он&nbsp;ведёт, и&nbsp;то, как он&nbsp;питается. Пятиразовое питание в&nbsp;кафе по&nbsp;заказной системе (завтрак, обед, полдник, ужин, дополнительный ужин &laquo;сонник&raquo; (соки, кефир) Диетическое питание (стол &#8470;&nbsp;5&nbsp;&mdash; печёночный, при заболеваниях желудочно-кишечного тракта; стол &#8470;&nbsp;9&nbsp;&mdash; диабетический, при сахарном диабете; стол &#8470;&nbsp;15&nbsp;&mdash; общий стол)</p>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Правильное питание</h3>
+            <ul>
+              <li><p>Пятиразовое питание</p></li>
+              <li><p>Заказная система</p></li>
+              <li><p>Меню на основе рекомендованных диет</p></li>
+            </ul>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Правильное питание — основа здоровья!</h3>
+            <ul>
+              <li><p>Разнообразное и сбалансированное питание</p></li>
+              <li><p>Оптимальный баланс белков, жиров и углеводов </p></li>
+              <li><p>Продукты, богатые энергией, питательными и минеральными веществами, витаминами</p></li>
+              <li><p>Соблюдение правильного режима питания</p></li>
+            </ul>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Здоровый желудочно-кишечный тракт!</h3>
+            <p>Стол при заболевании желудочно-кишечного тракта: <br> Сбалансированный рацион <br> Приготовление пищи способом варки, тушения, запекания <br> Исключение из&nbsp;рациона продуктов, оказывающие вредное механическое воздействие на&nbsp;органы пищеварения <br> Отсутствие блюд, вызывающих раздражение желудка <br> Оптимальная температура пищи</p>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Уровень сахара под контролем!</h3>
+            <ul>
+              <li><p>Диабетический стол:</p></li>
+              <li><p>Контроль в употреблении легкоусвояемых углеводов</p></li>
+              <li><p>Исключение продуктов с большим содержанием животного жира</p></li>
+              <li><p>Ограничение в употреблении жареных, острых, солёных, пряных и копчёных блюд</p></li>
+              <li><p>Сбалансированный рацион</p></li>
+            </ul>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Почему полезно питаться правильно?</h3>
+            <p>Здоровое питание&nbsp;&mdash; такое питание, которое обеспечивает наш организм всеми полезными веществами, необходимыми для того, чтобы мы&nbsp;выглядели и&nbsp;чувствовали себя хорошо. Здоровое питание снабжает человеческий организм оптимальным количеством энергии, держит в&nbsp;норме вес, поддерживает иммунитет, не&nbsp;нарушает работу внутренних органов и&nbsp;значительно сокращает риск развития различных заболеваний. Можно сказать, что рациональное питание стоит на&nbsp;страже нашего здоровья.</p>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Уровень сахара под контролем!</h3>
+            <ul>
+              <li><p>Разнообразное и&nbsp;сбалансированное питание. Для нормального функционирования нашего организма необходим правильный баланс белков, жиров и&nbsp;углеводов. Суточный рацион белков&nbsp;&mdash; 80&nbsp;г., из&nbsp;них около&nbsp;50% должны составлять животные белки, жиров должно быть 50&ndash;70&nbsp;г., из&nbsp;них животных&nbsp;&mdash; около&nbsp;70%, углеводов&nbsp;&mdash; порядка 400&nbsp;г. Также нужно не&nbsp;забывать о&nbsp;калорийности пищи. Для функционирования здорового человека необходимо 2500&ndash;2800 ккал в&nbsp;день.</p></li>
+              <li><p>В&nbsp;рационе не&nbsp;должно быть избытка животных жиров, которые в&nbsp;большом количестве содержатся в&nbsp;мясе с&nbsp;видимым жиром, в&nbsp;коже птицы, в&nbsp;жирных сырах. Готовить пищу лучше всего с&nbsp;использованием растительных масел: оливкового, кукурузного, подсолнечного, соевого. Салаты полезнее заправлять маслом, а&nbsp;не&nbsp;майонезом или сметаной.</p></li>
+              <li><p>Основу рациона должны преимущественно составлять такие продукты, богатые энергией, питательными и&nbsp;минеральными веществами, витаминами, как хлеб, блюда из&nbsp;круп и&nbsp;макаронных изделий, картофеля, а&nbsp;также овощи и&nbsp;фрукты. Не&nbsp;стоит забывать и&nbsp;о&nbsp;молочных продуктах, богатых кальцием.</p></li>
+              <li><p>Не&nbsp;стоит в&nbsp;большом количестве употреблять сладости (сахар, конфеты, кондитерские изделия) и&nbsp;пить сладкие напитки. Сладкое не&nbsp;только содержит большое количество калорий, что грозит ожирением. Его употребление в&nbsp;больших количествах может привести к&nbsp;таким неприятным последствиям, как атеросклероз.</p></li>
+              <li><p>Необходимо ограничить употребление соли. Оптимально количество соли для здорового человека&nbsp;&mdash; 5-6 граммов ежедневно. Лучше всего употреблять йодированную соль, которая является не&nbsp;только самой &laquo;невредной&raquo; солью, но&nbsp;и&nbsp;восполняет дефицит йода.</p></li>
+              <li><p>Не&nbsp;перебарщивать с&nbsp;алкоголем. Потребление его должно составлять не&nbsp;более 20&nbsp;г в&nbsp;день.</p></li>
+              <li><p>Пищу лучше варить или готовить на&nbsp;пару. Так сохраняются минеральные вещества и&nbsp;витамины. Жареной пищей рекомендуется не&nbsp;увлекаться.</p></li>
+              <li><p>Соблюдение режима питания позволяет организму настроиться на&nbsp;определённый ритм, который способствует улучшению переваривания и&nbsp;усвоения пищи.</p></li>
+              <li><p>Кратный приём небольшого количества пищи. Это не&nbsp;только не&nbsp;перегружает организм, но&nbsp;и&nbsp;снижает риск повышения массы тела.</p></li>
+              <li><p>Здоровое питание обязательно должно поддерживать идеальный вес, когда индекс массы тела равен 20&ndash;24,9.</p></li>
+              <li><p>Для поддержания здоровья необходимо не&nbsp;только получать калории, но&nbsp;и&nbsp;тратить&nbsp;их. То&nbsp;есть вести активный образ жизни.</p></li>
+              <li><p>Правильное питание также очень важно для людей с&nbsp;какими‑то заболеваниями. Для большинства болезней предназначены специальные диеты.</p></li>
+            </ul>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Питание при заболеваниях желудочно-кишечного тракта</h3>
+            <p>Главный принцип диеты — не урезание человека в разнообразии продуктов питания, а сбалансированность рациона.<br> Пища готовится наиболее подходящими технологическими способами — варкой, тушением, запеканием.<br> Из рациона исключаются продукты, оказывающие вредное механическое воздействие на органы пищеварения: свежие фрукты с кожурой, жёсткое мясо, сухожилия, хрящи, капуста, а также твёрдая пища и пища большими кусками.<br> В меню — блюда, не вызывающие раздражение желудка. То есть, без добавления пряностей (горчица, хрен, острый перец), лука и чеснока. В рационе отсутствуют острая, солёная и кислая пища, мясные и рыбные продукты с высоким содержанием экстрактивных веществ, крепкие бульоны, чёрный кофе. Строго контролируется количество соли в диетической пище. Свежее масло добавляется уже в готовое блюдо, а не во время приготовления.<br> Супы и соусы готовятся на крупяных и лёгких овощных отварах. Не допускается слишком горячая и очень холодная пища. Пища всегда достаточно проваренная, протушенная и пропечённая.</p>
+          </div>
+          <div class="text-content__wrap">
+            <h3>Питание при сахарном диабете</h3>
+            <p>В&nbsp;первую очередь больной значительно (а&nbsp;в&nbsp;некоторых случаях и&nbsp;полностью) ограничивается в&nbsp;употреблении легкоусвояемых углеводов. Это сахар, конфеты, шоколад, кондитерские изделия, сдоба, варенье, мёд, мороженое и&nbsp;другие сладости, а&nbsp;также сладкие фрукты и&nbsp;ягоды: виноград, бананы, изюм, финики. <br> Максимально ограничивается потребление продуктов, содержащих большое количество животного жира: колбасы, сардельки, сосиски, жирное мясо, майонез, сметана, сыры). <br> Серьёзно ограничивается или исключается употребление жареных, острых, солёных, пряных и&nbsp;копчёных блюд, консервов, перца, горчицы, алкогольных напитков. Противопоказаны виноград, бананы, изюм. Сахар допускается лишь в&nbsp;небольших количествах по&nbsp;разрешению врача. <br> Наоборот, рекомендуется употребление следующих продуктов: преимущественно чёрный или специальный диабетический хлеб; овощные супы; нежирное мясо, птица или рыба; овсяная, гречневая крупа; овощи, кроме картофеля, свёклы и&nbsp;моркови (их&nbsp;нужно употреблять в&nbsp;небольшом количестве); фрукты и&nbsp;ягоды кислых и&nbsp;кисло-сладких сортов; творог; чёрный или зелёный чай.</p>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-block">
+        <div class="container">
+          <h2 class="title title--h2">Галерея</h2>
+          <div class="gallery">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-1.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-2.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-3.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-4.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="card-photo">
+                  <img class="card-photo__img" src="img/gallery/gallery-5.png" width="384" height="256" alt="Фотография санатория">
+                </article>
+              </li>
+              <li class="gallery__item">
+                <article class="video-player" data-video="video-player">
+                  <div class="video-player__wrap" data-video="player" data-video-id="YjS2uEJ78T4"></div>
+                  <div class="video-player__overlay" data-video="overlay">
+                    <img src="img/gallery/gallery-video-promo.png" width="384" height="256" alt="Фото видео">
+                    <button class="video-player__btn" type="button" data-video="button-play" arial-label="video-play">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="img/logo-footer.png" alt="Логотип санатория Родничок.">
+          <h2 class="footer__logo-title">Санаторий Родничок</h2>
+        </div>
+        <address class="footer__address">
+          <p class="footer__address-text">Пермский край, Суксунский район, село Ключи, ул. Заречная, 11</p>
+          <a class="footer__phone" href="tel:73422582800">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +7 342 258-28-00
+          </a>
+          <a class="footer__mail" href="mailto:lokkluchi@yandex.ru">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <span class="visually-hidden">lokkluchi@yandex.ru</span>
+          </a>
+          <a class="footer__chat" href="#">
+            <svg class="footer__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="visually-hidden">Перейти в чат</span>
+          </a>
+        </address>
+        <a class="footer__vk-link" href="#">
+          <svg class="footer__icon footer__icon--vk" width="32" height="32">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
+          Присоединяйтесь к нам
+        </a>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">О санатории</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Питание</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Развлечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Как добарться</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Вопрос-ответ</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Отзывы</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Транфсер</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Информация</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Лицензии</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Лечение</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Виды лечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Показания для лечения</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Программы лечения</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Проживание</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Корпусы</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Номера</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Цены</a>
+              <ul class="footer__submenu">
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Дата — 1</a>
+
+                <li class="footer__submenu-item">
+                  <a class="footer__submenu-link" href="#">Дата - N</a>
+
+              </ul>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Бронирование</a>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Акции и новости</a>
+
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Контакты</a>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

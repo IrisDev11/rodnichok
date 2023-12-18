@@ -6,8 +6,6 @@ import {initSliderNews} from './modules/init-slider-news';
 import {initSliderReviews} from './modules/init-slider-reviews';
 import {initToggleClassCard} from './modules/init-toggle-class-card';
 import {initTabs} from './modules/init-tabs';
-// import {toggleClassIndications} from './modules/toggle-class-indications';
-// import {initIndicationsSlider} from './modules/init-indications-slider';
 
 // ---------------------------------
 
@@ -33,8 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderReviews();
     initToggleClassCard();
     initTabs();
-    // toggleClassIndications();
-    // initIndicationsSlider();
   });
 });
 
