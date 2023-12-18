@@ -5,6 +5,7 @@ import {initMobileMenu} from './modules/init-mobile-menu';
 import {initSliderNews} from './modules/init-slider-news';
 import {initSliderReviews} from './modules/init-slider-reviews';
 import {initToggleClassCard} from './modules/init-toggle-class-card';
+import {initVideoPlay} from './modules/init-video-play';
 import {initTabs} from './modules/init-tabs';
 
 // ---------------------------------
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderNews();
     initSliderReviews();
     initToggleClassCard();
+    initVideoPlay();
     initTabs();
   });
 });

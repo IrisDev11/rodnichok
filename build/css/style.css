@@ -3767,7 +3767,16 @@ button,
 }
 
 .map-section .map {
+  width: 100%;
+  height: 600px;
   border-radius: 0;
+}
+
+.map-section .map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .office-section {
