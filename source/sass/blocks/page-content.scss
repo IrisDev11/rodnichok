@@ -15,4 +15,15 @@
       }
     }
   }
+
+  &--about-walk {
+    .text-content__wrap {
+      max-width: 800px;
+      margin: 0 0 64px;
+
+      @include vp-1024 {
+        margin: 0 0 72px;
+      }
+    }
+  }
 }

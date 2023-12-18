@@ -47,4 +47,19 @@
       padding: 12px 16px;
     }
   }
+
+  &--reviews {
+    padding: 64px 0 94px;
+
+    background-color: $color-bg-green;
+    border-radius: 32px 32px 0 0;
+
+    @include vp-1024 {
+      padding: 72px 0 106px;
+    }
+
+    .feedback__title {
+      margin: 0 0 24px;
+    }
+  }
 }
