@@ -42,5 +42,9 @@
     @include vp-768 {
       width: fit-content;
     }
+
+    @include vp-1280 {
+      padding: 12px 16px;
+    }
   }
 }

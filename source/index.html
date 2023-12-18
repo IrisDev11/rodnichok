@@ -14,7 +14,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <button class="header__nav-toggle btn" type="button">
+        <button class="header__nav-toggle btn btn--border" type="button">
           <svg class="btn__icon" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-menu-toggle"></use>
           </svg>
@@ -98,7 +98,7 @@
                 </li>
               </ul>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__link" href="#">
                 Проживание
                 <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
@@ -111,7 +111,7 @@
                 </li>
               </ul>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__link" href="#">
                 Цены
                 <svg class="main-nav__icon" width="16" height="16" aria-label="Войти.">
@@ -127,21 +127,26 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Бронирование</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__link" href="#">Акции и новости</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__link" href="#">Контакты</a>
             </li>
           </ul>
-          <div class="more">
-            <button class="more__btn" type="button">
-              <span>Ещё</span>
-              <svg class="btn__icon" width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-down"></use>
-              </svg>
-            </button>
-            <ul class="more__list"></ul>
+          <div class="main-nav__more">
+            <span>Ещё</span>
+            <svg class="btn__icon main-nav__more-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-down"></use>
+            </svg>
+            <ul class="main-nav__more-list">
+              <li class="main-nav__more-item">
+                <a class="main-nav__more-link" href="#">Акции и новости</a>
+              </li>
+              <li class="main-nav__more-item">
+                <a class="main-nav__more-link" href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -320,7 +325,7 @@
                         <li class="card__list-item">Остеоартрозы (полиартроз, коксартроз, гонартроз и другие);</li>
                         <li class="card__list-item">Сколиоз.</li>
                       </ul>
-                      <a class="card__btn btn btn--tertiary" href="#">Подробнее</a>
+                      <a class="card__btn btn btn--tertiary indications__card-btn" href="#">Подробнее</a>
                     </div>
                   </article>
                 </li>
@@ -460,6 +465,7 @@
                 </li>
               </ul>
             </div>
+            <div class="indications__pagination"></div>
           </div>
         </div>
       </section>

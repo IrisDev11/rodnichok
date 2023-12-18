@@ -17,6 +17,10 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 24px;
     }
+
+    @include vp-1280 {
+      align-items: center;
+    }
   }
 
   &__content {
@@ -42,6 +46,7 @@
 
     @include vp-1280 {
       font-size: 16px;
+      line-height: 24px;
     }
   }
 
@@ -66,6 +71,10 @@
       min-width: 287px;
       min-height: 256px;
       margin-bottom: 0;
+    }
+
+    @include vp-1280 {
+      border-radius: 32px;
     }
   }
 

@@ -14,25 +14,53 @@
 
   list-style: none;
 
-  border-radius: 8px;
-  background: $color-default-white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  @include vp-1024 {
+    border-radius: 8px;
+    background: $color-default-white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  }
 
   &__item {
-    text-align: center;
+    @include vp-1024 {
+      text-align: center;
 
-    &:not(:last-of-type) {
-      border-bottom: 1px solid $color-bg-black-10;
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $color-bg-black-10;
+      }
     }
   }
 
   &__link {
+    position: relative;
     display: block;
-    padding: 16px;
+    padding-left: 15px;
+    margin: 8px 0;
 
     color: $color-paragraph-secondary;
     font-size: 16px;
     line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5px;
+      width: 3px;
+      height: 3px;
+
+      background-color: $color-paragraph-secondary;
+      border-radius: 50%;
+
+      @include vp-1024 {
+        display: none;
+      }
+    }
+
+    @include vp-1024 {
+      padding: 16px;
+      margin: 0;
+    }
 
     @include hover-focus {
       background-color: $color-brand-light;

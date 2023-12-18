@@ -1,33 +1,3 @@
-// const initSliderNews = () => {
-// // eslint-disable-next-line no-new, no-unused-vars, no-undef
-//   const swiper2 = new Swiper('.news__slider', {
-//     spaceBetween: 10,
-//     slidesPerView: 1,
-//     speed: 800,
-//     pagination: {
-//       el: '.slider__pagination',
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: '.slider__btn--next',
-//       prevEl: '.slider__btn--prev',
-//     },
-//     breakpoints: {
-//       360: {
-//         slidesPerView: 1.2,
-//       },
-//       768: {
-//         slidesPerView: 2,
-//       },
-//       1024: {
-//         slidesPerView: 3,
-//       },
-//       1280: {
-//         slidesPerView: 4,
-//       },
-//     },
-//   });
-// };
 const initSliderNews = () => {
   if (document.querySelector('.news__slider')) {
     // eslint-disable-next-line no-new, no-unused-vars, no-undef

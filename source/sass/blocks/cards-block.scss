@@ -1,9 +1,5 @@
 .cards-block {
   @include vp-1024 {
-    padding: 72px 0 0;
-  }
-
-  @include vp-1280 {
     padding: 72px 0;
   }
 

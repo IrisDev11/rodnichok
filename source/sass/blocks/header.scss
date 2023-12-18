@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: static;
+  // top: 0;
+  // left: 0;
+  width: 100%;
   z-index: 2;
   padding: 8px 0;
 
@@ -134,12 +137,10 @@
   }
 
   @include vp-1024 {
-    // height: 48px;
-    padding: 0 0 4px;
+    padding: 0;
   }
 
   @include vp-1280 {
-    // height: auto;
     padding: 12px 0 0;
   }
 
@@ -148,6 +149,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     @include vp-1024 {
       flex-wrap: nowrap;
@@ -181,12 +183,13 @@
     align-items: center;
 
     @include vp-1024 {
-      position: static;
+      left: 16px;
       margin-right: 12px;
       transform: translateX(0);
     }
 
     @include vp-1280 {
+      position: static;
       margin-bottom: 8px;
     }
   }
@@ -207,7 +210,7 @@
 
     @include vp-1280 {
       display: block;
-      margin-right: 12px;
+      margin-left: 12px;
     }
   }
 
@@ -216,7 +219,11 @@
     padding: 10px 12px;
 
     @include vp-1024 {
-      margin-top: 4px;
+      align-self: center;
+    }
+
+    @include vp-1280 {
+      align-self: flex-start;
     }
   }
 
@@ -261,6 +268,7 @@
     }
 
     @include vp-1280 {
+      padding: 10px 12px;
       margin-left: auto;
 
       .btn__text {
@@ -290,6 +298,8 @@
     }
 
     @include vp-1280 {
+      padding: 10px 12px;
+
       .btn__text {
         display: inline;
       }
@@ -307,6 +317,58 @@
 
     @include vp-1024 {
       flex-shrink: 0;
+    }
+  }
+
+  &--scroll {
+    @include vp-1280 {
+      padding: 0;
+
+      .container {
+        max-width: 1440px;
+        padding: 0 16px 0 106px;
+        flex-wrap: nowrap;
+      }
+
+      .header__logo {
+        position: absolute;
+        left: 24px;
+        margin: 0 20px 0 0;
+      }
+
+      .header__logo-title {
+        display: none;
+      }
+
+      .header__user-link {
+        align-self: center;
+
+        .btn__text {
+          display: none;
+        }
+      }
+
+      .header__user-link--account .btn__icon,
+      .header__user-link--phone .btn__icon,
+      .header__user-link--map .btn__icon {
+        margin-right: 0;
+      }
+
+      .main-nav {
+        order: 2;
+      }
+
+      .main-nav__list {
+        display: flex;
+      }
+
+      .main-nav__item {
+        width: fit-content;
+      }
+
+      .main-nav__link {
+        padding: 12px 16px;
+      }
     }
   }
 }

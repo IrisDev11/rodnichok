@@ -6,8 +6,8 @@ import {initSliderNews} from './modules/init-slider-news';
 import {initSliderReviews} from './modules/init-slider-reviews';
 import {initToggleClassCard} from './modules/init-toggle-class-card';
 import {initTabs} from './modules/init-tabs';
-import {initNavModules} from './modules/init-resize-nav';
-import {initMoreNav} from './modules/init-more-nav';
+// import {toggleClassIndications} from './modules/toggle-class-indications';
+// import {initIndicationsSlider} from './modules/init-indications-slider';
 
 // ---------------------------------
 
@@ -33,8 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderReviews();
     initToggleClassCard();
     initTabs();
-    initNavModules();
-    initMoreNav();
+    // toggleClassIndications();
+    // initIndicationsSlider();
   });
 });
 
