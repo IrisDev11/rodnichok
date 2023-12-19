@@ -8,6 +8,7 @@ import {initToggleClassCard} from './modules/init-toggle-class-card';
 import {initVideoPlay} from './modules/init-video-play';
 import {initTabs} from './modules/init-tabs';
 import {initAccordions} from './modules/init-accordion';
+import {initContentModal} from './modules/init-content-modal';
 
 // ---------------------------------
 
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideoPlay();
     initTabs();
     initAccordions();
+    initContentModal();
   });
 });
 

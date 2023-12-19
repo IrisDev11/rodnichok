@@ -1,0 +1,72 @@
+.pagination-section {
+  padding: 0 0 64px;
+
+  @include vp-1024 {
+    padding: 0 0 72px;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  &__btn {
+    background: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: background-color $trans-default;
+    border-radius: 6px;
+    background: $color-default-white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 8px;
+  }
+
+  &__item {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    color: $color-paragraph-primary;
+    background-color: $color-bg-black-10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color $trans-default;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    @include hover-focus {
+      background-color: $color-bg-black-20;
+    }
+
+    @include active {
+      background-color: $color-bg-black-40;
+    }
+
+    &.is-active {
+      color: $color-default-white;
+      pointer-events: none;
+      background: var(--brand-primary-hover, linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #06BADA);
+    }
+  }
+}

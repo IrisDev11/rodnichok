@@ -39,10 +39,6 @@
     width: 100%;
     min-height: 100%;
     padding: 60px 40px;
-
-    @include vp-767 {
-      padding: 60px 16px;
-    }
   }
 
   &__overlay {
@@ -60,14 +56,9 @@
     position: relative;
 
     width: 600px;
-    padding: 40px;
+    border-radius: 16px;
 
     background-color: $color-default-white;
-
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
   }
 
   &__close-btn {
@@ -82,31 +73,16 @@
 
     background: $color-transparent;
     border: none;
+    transition: opacity $trans-default;
     cursor: pointer;
-  }
 
-  &--responsive {
-    .modal__content {
-      width: 100%;
+    @include hover-focus {
+      opacity: 0.8;
     }
-  }
 
-  &--fit-content {
-    .modal__content {
-      width: auto;
-
-      @include vp-767 {
-        width: 100%;
-      }
+    @include active {
+      opacity: 0.8;
     }
-  }
-
-  &--no-scale {
-    transform: none;
-  }
-
-  &--preload {
-    transition: none;
   }
 
   &.is-active {
@@ -115,5 +91,14 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+
+  &--documentation {
+    img {
+      border-radius: 16px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
