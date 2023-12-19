@@ -1,0 +1,60 @@
+.accordion {
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    border-bottom: 1px solid $color-bg-black-10;
+    margin: 0 0 20px;
+  }
+
+  &__element.is-active > &__button {
+    svg {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 20px 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: $color-text-title;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    transition: opacity $trans-default;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
+    span {
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      transition: transform $trans-default;
+    }
+  }
+
+  &__content {
+    color: $color-paragraph-primary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
