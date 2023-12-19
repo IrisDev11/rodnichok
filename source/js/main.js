@@ -7,6 +7,7 @@ import {initSliderReviews} from './modules/init-slider-reviews';
 import {initToggleClassCard} from './modules/init-toggle-class-card';
 import {initVideoPlay} from './modules/init-video-play';
 import {initTabs} from './modules/init-tabs';
+import {initAccordions} from './modules/init-accordion';
 
 // ---------------------------------
 
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initToggleClassCard();
     initVideoPlay();
     initTabs();
+    initAccordions();
   });
 });
 

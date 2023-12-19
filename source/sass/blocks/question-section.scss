@@ -1,0 +1,18 @@
+.question-section {
+  padding: 0 0 64px;
+
+  @include vp-1024 {
+    padding: 0 0 72px;
+  }
+
+  &__accordion {
+    max-width: 588px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin: 0 0 33px;
+    text-align: center;
+  }
+}
