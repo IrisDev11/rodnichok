@@ -96,7 +96,9 @@
 
     @include vp-1024 {
       padding: 12px 16px;
+
       color: $color-paragraph-secondary;
+      font-weight: 400;
     }
 
     @include vp-1280 {
@@ -106,6 +108,7 @@
     }
 
     @include hover-focus {
+      color: $color-paragraph-primary;
       background-color: $color-brand-light;
 
       .main-nav__icon {
@@ -114,11 +117,14 @@
     }
 
     @include active {
+      color: $color-paragraph-primary;
       background-color: $color-brand-dark;
     }
 
     &.is-active {
       position: relative;
+      font-weight: 500;
+      color: $color-paragraph-primary;
 
       &::before {
         content: "";

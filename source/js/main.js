@@ -9,6 +9,8 @@ import {initVideoPlay} from './modules/init-video-play';
 import {initTabs} from './modules/init-tabs';
 import {initAccordions} from './modules/init-accordion';
 import {initContentModal} from './modules/init-content-modal';
+import {initHeaderScroll} from './modules/init-header-scroll';
+import {initIndicationsSlider} from './modules/init-indications-slider';
 
 // ---------------------------------
 
@@ -37,6 +39,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initAccordions();
     initContentModal();
+    initHeaderScroll();
+    initIndicationsSlider();
   });
 });
 

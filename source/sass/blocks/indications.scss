@@ -6,6 +6,49 @@
     min-height: 624px;
   }
 
+  .container {
+    padding-right: 0;
+
+    @include vp-768 {
+      padding: 0 24px;
+    }
+
+    @include vp-1024 {
+      padding: 0 40px;
+    }
+
+    @include vp-1280 {
+      max-width: 1280px;
+      padding: 0 40px;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    @include vp-768 {
+      display: block;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-768 {
+      display: none;
+    }
+  }
+
+  &__slider-list {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
   &__tabs {
     @include vp-768 {
       display: grid;

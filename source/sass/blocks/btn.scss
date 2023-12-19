@@ -27,11 +27,11 @@
     border: 1px solid $color-brand-primary;
 
     @include hover-focus {
-      background-color: #E6F8FB;
+      background-color: $color-brand-light;
     }
 
     @include active {
-      background-color: #CDF1F8;
+      background-color: $color-brand-dark;
     }
   }
 
@@ -41,11 +41,11 @@
     background-color: $color-brand-primary;
 
     @include hover-focus {
-      background-color: #0595AE;
+      background-color: $color-brand-primary-hover;
     }
 
     @include active {
-      background-color: #047083;
+      background-color: $color-brand-primary-pressed;
     }
   }
 
@@ -59,7 +59,7 @@
     }
 
     @include active {
-      background-color: $color-bg-blue-10;
+      background-color: $color-bg-blue-5;
     }
   }
 

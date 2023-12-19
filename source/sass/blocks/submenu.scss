@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   z-index: 99;
+  overflow: hidden;
 
   list-style: none;
 
@@ -63,11 +64,18 @@
     }
 
     @include hover-focus {
+      color: $color-paragraph-primary;
       background-color: $color-brand-light;
     }
 
     @include active {
+      color: $color-paragraph-primary;
       background-color: $color-brand-dark;
+    }
+
+    &.is-active {
+      font-weight: 500;
+      color: $color-paragraph-primary;
     }
   }
 }
