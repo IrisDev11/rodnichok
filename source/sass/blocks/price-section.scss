@@ -1,0 +1,39 @@
+.price-section {
+  padding: 0 0 64px;
+
+  @include vp-1024 {
+    padding: 0 0 72px;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  &__info {
+    display: grid;
+    gap: 24px;
+
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: $color-paragraph-primary;
+    line-height: 24px;
+  }
+
+  &__link {
+    width: fit-content;
+    color: $color-text-blue;
+    line-height: 24px;
+
+    transition: opacity $trans-default;
+    outline: none;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}
