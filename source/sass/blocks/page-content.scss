@@ -16,9 +16,9 @@
     }
   }
 
-  &--about-walk {
+  &--text-left {
     .text-content__wrap {
-      max-width: 800px;
+      max-width: 950px;
       margin: 0 0 64px;
 
       @include vp-1024 {
