@@ -44,7 +44,12 @@
     }
   }
 
+  .txttohtmllink {
+    color: $color-paragraph-secondary;
+  }
+
   &__map {
+    position: relative;
     order: 1;
     margin-bottom: 24px;
 
