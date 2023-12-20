@@ -63,12 +63,13 @@
       margin: 0;
     }
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       color: $color-paragraph-primary;
       background-color: $color-brand-light;
     }
 
-    @include active {
+    &:active {
       color: $color-paragraph-primary;
       background-color: $color-brand-dark;
     }

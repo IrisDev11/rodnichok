@@ -43,7 +43,8 @@
       border-bottom: none;
       height: 100%;
 
-      &:hover {
+      &:hover,
+      &:focus {
         .main-nav__link + .submenu {
           position: absolute;
           display: block;
@@ -107,7 +108,8 @@
       padding: 12px 16px;
     }
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       color: $color-paragraph-primary;
       background-color: $color-brand-light;
 
@@ -116,7 +118,7 @@
       }
     }
 
-    @include active {
+    &:active {
       color: $color-paragraph-primary;
       background-color: $color-brand-dark;
     }
@@ -219,7 +221,8 @@
     cursor: pointer;
     transition: background-color $trans-default;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: $color-brand-light;
 
       .main-nav__more-list {
@@ -231,7 +234,7 @@
       }
     }
 
-    @include active {
+    &:active {
       background-color: $color-brand-dark;
     }
 

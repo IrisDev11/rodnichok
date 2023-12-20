@@ -26,11 +26,12 @@
     background-color: $color-default-white;
     border: 1px solid $color-brand-primary;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: $color-brand-light;
     }
 
-    @include active {
+    &:active {
       background-color: $color-brand-dark;
     }
   }
@@ -40,11 +41,12 @@
 
     background-color: $color-brand-primary;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: $color-brand-primary-hover;
     }
 
-    @include active {
+    &:active {
       background-color: $color-brand-primary-pressed;
     }
   }
@@ -54,11 +56,12 @@
 
     background-color: $color-bg-blue;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: $color-bg-blue-10;
     }
 
-    @include active {
+    &:active {
       background-color: $color-bg-blue-5;
     }
   }
@@ -68,11 +71,12 @@
 
     background-color: $color-bg-black-10;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: $color-bg-black-20;
     }
 
-    @include active {
+    &:active {
       background-color: $color-bg-black-40;
     }
   }
