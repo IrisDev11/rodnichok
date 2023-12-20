@@ -18,6 +18,7 @@
     color: $color-paragraph-primary;
     margin: 0 0 32px;
 
+
     @include vp-1280 {
       margin: 0 0 24px;
     }
@@ -29,6 +30,7 @@
     margin: 0 0 24px;
     font-size: 14px;
     line-height: 20px;
+    color: $color-paragraph-primary;
 
     @include vp-1024 {
       font-size: 16px;
