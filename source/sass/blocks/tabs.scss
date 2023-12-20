@@ -5,6 +5,7 @@
     border: 1px solid $color-bg-black-20;
     background-color: $color-default-white;
     padding: 4px;
+    margin: 0 0 16px;
   }
 
   &__control {
@@ -30,5 +31,9 @@
       background: $color-brand-primary;
       color: $color-default-white;
     }
+  }
+
+  &__element {
+    width: 100%;
   }
 }
