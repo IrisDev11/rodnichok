@@ -1,18 +1,10 @@
-.reviews-section {
-  padding: 0 0 64px;
-
-  @include vp-1024 {
-    padding: 0 0 72px;
-  }
-
-  .title--h1 {
-    margin: 0 0 40px;
-  }
+.information {
+  padding: 0 0 24px;
 
   &__list {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(1, 1fr);
@@ -20,5 +12,9 @@
     @include vp-1024 {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  .title--h1 {
+    margin: 0 0 40px;
   }
 }
