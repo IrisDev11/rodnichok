@@ -117,6 +117,10 @@
 
     transition: background-color $trans-default;
 
+    .footer__icon {
+      margin-right: 4px;
+    }
+
     @include hover-focus {
       background-color: $color-brand-dark;
     }
