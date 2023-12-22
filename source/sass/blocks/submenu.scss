@@ -15,6 +15,13 @@
 
   list-style: none;
 
+  &.is-active {
+    position: static;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
   @include vp-1024 {
     border-radius: 8px;
     background: $color-default-white;
