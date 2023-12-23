@@ -1,0 +1,64 @@
+.treatment {
+  &__content {
+    padding-bottom: 64px;
+
+    @include vp-1024 {
+      padding-bottom: 72px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @include vp-1024 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__type-list {
+    display: grid;
+    row-gap: 12px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__type-item {
+    padding: 16px;
+
+    border-radius: 16px;
+    border: 1px solid $color-bg-black-10;
+    background-color: $color-default-white;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+
+    @include hover-focus {
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.12), 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    @include vp-1024 {
+      padding: 24px;
+    }
+
+    @include vp-1280 {
+      border-radius: 24px;
+    }
+  }
+
+  &__type-title {
+    margin-bottom: 8px;
+  }
+
+  &__type-text {
+    margin: 0 0 16px;
+    color: $color-paragraph-primary;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cards-block {
+    padding-top: 0;
+  }
+}
