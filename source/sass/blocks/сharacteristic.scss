@@ -1,0 +1,30 @@
+.сharacteristic {
+  width: 196px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  display: grid;
+
+  &__wrap {
+    display: grid;
+  }
+
+  &__title {
+    color: $color-text-title;
+    font-size: 14px;
+
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .icon-text__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon-text__text {
+    font-size: 14px;
+  }
+}

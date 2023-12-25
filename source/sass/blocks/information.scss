@@ -17,4 +17,28 @@
   .title--h1 {
     margin: 0 0 40px;
   }
+
+  &--accommodation {
+    padding: 0 0 64px;
+
+    @include vp-1024 {
+      padding: 0 0 72px;
+    }
+  }
+
+  &--accommodation-frame {
+    .information__list {
+      gap: 24px;
+      grid-template-columns: repeat(1, 1fr);
+
+      .card--horizontal {
+        @include vp-768 {
+          display: grid;
+          grid-template-columns: 258px 1fr;
+          column-gap: 16px;
+          padding: 16px;
+        }
+      }
+    }
+  }
 }
