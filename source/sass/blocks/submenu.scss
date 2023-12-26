@@ -36,6 +36,26 @@
         border-bottom: 1px solid $color-bg-black-10;
       }
     }
+
+    &.is-active {
+      position: relative;
+      font-weight: 500;
+      color: $color-paragraph-primary;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 4px;
+        height: 90%;
+
+        background-color: $color-brand-primary;
+        border-radius: 8px 0 0 8px;
+      }
+    }
   }
 
   &__link {
