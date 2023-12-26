@@ -67,6 +67,7 @@
     border-radius: 16px;
 
     background-color: $color-default-white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
   }
 
   &__close-btn {
@@ -133,12 +134,17 @@
   &--entrance,
   &--restore {
     .modal__content {
-      max-width: 384px;
+      max-width: 320px;
       width: 100%;
-      padding: 40px;
+      padding: 56px 12px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+
+      @include vp-768 {
+        padding: 40px;
+        max-width: 384px;
+      }
     }
   }
-
 
   .tabs__controls {
     width: 100%;
