@@ -1,0 +1,97 @@
+.modal-fixed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 72px;
+
+  &__content {
+    border-radius: 16px;
+    background: $color-default-white;
+    max-width: 320px;
+    width: 100%;
+    padding: 56px 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+
+    @include vp-768 {
+      padding: 40px;
+      max-width: 384px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__discriptions {
+    margin: 0 0 24px;
+  }
+
+  &__discriptions-link {
+    color: $color-paragraph-secondary;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 12px 0 0;
+
+    a {
+      color: $color-text-blue;
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 16px;
+
+    label {
+      color: $color-text-title;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 0 0 2px;
+    }
+
+    input {
+      border-radius: var(--8, 8px);
+      border: 1px solid $color-bg-black-20;
+      background: $color-default-white;
+      padding: 8px;
+      outline: none;
+      transition: border-color $trans-default;
+
+      @include hover-focus {
+        border-color: $color-brand-primary-hover;
+      }
+
+      @include active {
+        border-color: $color-brand-primary-pressed;
+      }
+    }
+
+    .modal-fixed__link {
+      color: $color-text-blue;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: opacity $trans-default;
+      margin: 8px 0 0;
+
+      @include hover-focus {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+}
