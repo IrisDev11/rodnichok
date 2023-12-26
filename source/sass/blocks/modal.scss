@@ -38,7 +38,15 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 60px 12px;
+
+    @include vp-768 {
+      padding: 60px 24px;
+    }
+
+    @include vp-1024 {
+      padding: 60px 40px;
+    }
   }
 
   &__overlay {
@@ -63,12 +71,12 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 10px;
+    right: 10px;
     z-index: 1;
 
-    width: 40px;
-    height: 40px;
+    width: 16px;
+    height: 16px;
     padding: 0;
 
     background: $color-transparent;
@@ -76,12 +84,23 @@
     transition: opacity $trans-default;
     cursor: pointer;
 
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
     @include hover-focus {
       opacity: 0.8;
     }
 
     @include active {
       opacity: 0.8;
+    }
+
+    @include vp-768 {
+      top: 16px;
+      right: 16px;
     }
   }
 
@@ -99,6 +118,138 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .modal__close-btn {
+      background-color: white;
+      padding: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+  }
+
+  &--entrance,
+  &--restore {
+    .modal__content {
+      max-width: 384px;
+      width: 100%;
+      padding: 40px;
+    }
+  }
+
+
+  .tabs__controls {
+    width: 100%;
+    margin: 0 0 12px;
+
+    .tabs__control {
+      max-width: 145px;
+      width: 49%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__discriptions {
+    margin: 0 0 24px;
+  }
+
+  &__discriptions-link {
+    color: $color-paragraph-secondary;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 12px 0 0;
+
+    a {
+      color: $color-text-blue;
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 16px;
+
+    label {
+      color: $color-text-title;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 0 0 2px;
+    }
+
+    input {
+      border-radius: var(--8, 8px);
+      border: 1px solid $color-bg-black-20;
+      background: $color-default-white;
+      padding: 8px;
+      outline: none;
+      transition: border-color $trans-default;
+
+      @include hover-focus {
+        border-color: $color-brand-primary-hover;
+      }
+
+      @include active {
+        border-color: $color-brand-primary-pressed;
+      }
+    }
+
+    .modal__link {
+      color: $color-text-blue;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: opacity $trans-default;
+      margin: 8px 0 0;
+
+      @include hover-focus {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .modal-restore__close-btn {
+    border-radius: 6px;
+    background: $color-bg-black-10;
+    border: none;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    color: $color-paragraph-primary;
+    line-height: 20px;
+    margin: 0 0 16px;
+    transition: opacity $trans-default;
+    cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-right: 8px;
+      transform: rotate(-180deg);
     }
   }
 }

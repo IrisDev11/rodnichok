@@ -12,6 +12,7 @@ import {initContentModal} from './modules/init-content-modal';
 import {initHeaderScroll} from './modules/init-header-scroll';
 import {initIndicationsSlider} from './modules/init-indications-slider';
 import {initSubmenuMobile} from './modules/init-submenu-mobile';
+import {initSliderCards} from './modules/init-slider-cards';
 
 // ---------------------------------
 
@@ -43,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initHeaderScroll();
     initIndicationsSlider();
     initSubmenuMobile();
+    initSliderCards();
   });
 });
 

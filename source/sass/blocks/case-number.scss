@@ -1,0 +1,36 @@
+.case-number {
+  .title--h1 {
+    margin: 0 0 40px;
+  }
+
+  &__detail {
+    display: grid;
+    gap: 16px;
+    margin: 0 0 40px;
+
+    .btn {
+      width: 134px;
+      height: 44px;
+      margin: 0 auto;
+    }
+  }
+
+  &__detail-header {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__discription {
+    color: $color-paragraph-primary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__detail-info {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
