@@ -36,11 +36,11 @@
           </svg>
           <span class="btn__text btn__text--hidden">+7 342 258-28-00</span>
         </a>
-        <a class="header__user-link header__user-link--account btn btn--secondary" href="#">
+        <a class="header__user-link header__user-link--account btn btn--secondary" href="#" data-open-modal="entrance">
           <svg class="btn__icon" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-account"></use>
           </svg>
-          <span class="btn__text" data-open-modal="entrance">Личный кабинет</span>
+          <span class="btn__text" >Личный кабинет</span>
         </a>
         <a class="header__user-link header__user-link--feedback btn btn--primary" href="#">Задать вопрос</a>
         <nav class="main-nav">
@@ -352,23 +352,23 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <div class="modal-entrance">
-          <div class="modal-entrance__wrap-tabs tabs" data-tabs="parent">
+          <div class="modal__wrap-tabs tabs" data-tabs="parent">
             <div class="tabs__controls" data-tabs="controls">
               <button class="tabs__control is-active" type="button" data-tabs="control">Вход</button>
               <button class="tabs__control" type="button" data-tabs="control">Регистрация</button>
             </div>
             <div class="tabs__content" data-tabs="content">
               <div class="tabs__element is-active" data-tabs="element">
-                <form action="#" class="modal-entrance__form">
-                  <p class="modal-entrance__discriptions">У вас уже есть личный кабинет? Введите данные для входа</p>
-                  <div class="modal-entrance__input-wrap">
-                    <label class="modal-entrance__label" for="email">Электронная почта</label>
-                    <input class="modal-entrance__input" type="email" id="email" name="email" placeholder="name@yandex.ru">
+                <form action="#" class="modal__form">
+                  <p class="modal__discriptions">У вас уже есть личный кабинет? Введите данные для входа</p>
+                  <div class="modal__input-wrap">
+                    <label class="modal__label" for="email">Электронная почта</label>
+                    <input class="modal__input" type="email" id="email" name="email" placeholder="name@yandex.ru">
                   </div>
-                  <div class="modal-entrance__input-wrap">
-                    <label class="modal-entrance__label" for="email">Пароль</label>
+                  <div class="modal__input-wrap">
+                    <label class="modal__label" for="email">Пароль</label>
                     <input type="password" name="password" placeholder="Ваш пароль">
-                    <a class="modal-entrance__link" href="#">Забыли пароль?</a>
+                    <a class="modal__link" href="#" data-open-modal="restore">Забыли пароль?</a>
                   </div>
                     <input type="checkbox" class="custom-checkbox" id="remember" name="remember" value="yes">
                   <label for="remember">Запомнить меня</label>
@@ -376,22 +376,22 @@
                 </form>
               </div>
               <div class="tabs__element" data-tabs="element">
-                <form action="#" class="modal-entrance__form">
-                  <p class="modal-entrance__discriptions">Чтобы сохранить ваше бронирование и всегда иметь к нему доступ, а так же видеть назначенный процедуры в момент пребывания в санатории, пожалуйста пройдите быструю регистрацию.</p>
-                  <div class="modal-entrance__input-wrap">
-                    <label class="modal-entrance__label" for="email-1">Электронная почта</label>
-                    <input class="modal-entrance__input" type="email" id="email-1" name="email-1" placeholder="name@yandex.ru">
+                <form action="#" class="modal__form">
+                  <p class="modal__discriptions">Чтобы сохранить ваше бронирование и всегда иметь к нему доступ, а так же видеть назначенный процедуры в момент пребывания в санатории, пожалуйста пройдите быструю регистрацию.</p>
+                  <div class="modal__input-wrap">
+                    <label class="modal__label" for="email-1">Электронная почта</label>
+                    <input class="modal__input" type="email" id="email-1" name="email-1" placeholder="name@yandex.ru">
                   </div>
-                  <div class="modal-entrance__input-wrap">
-                    <label class="modal-entrance__label" for="email">Пароль</label>
+                  <div class="modal__input-wrap">
+                    <label class="modal__label" for="email">Пароль</label>
                     <input type="password" name="password" placeholder="Придумайте пароль">
                   </div>
-                  <div class="modal-entrance__input-wrap">
-                    <label class="modal-entrance__label" for="email">Повторите пароль</label>
+                  <div class="modal__input-wrap">
+                    <label class="modal__label" for="email">Повторите пароль</label>
                     <input type="password" name="password" placeholder="Придумайте пароль">
                   </div>
                   <a class="btn btn--primary" href="#">Регистрация</a>
-                  <span class="modal-entrance__discriptions-link">Нажимая на кнопку, вы соглашаетесь <br> с <a href="#">политикой обработки персональных данных</a></span>
+                  <span class="modal__discriptions-link">Нажимая на кнопку, вы соглашаетесь <br> с <a href="#">политикой обработки персональных данных</a></span>
                 </form>
               </div>
             </div>
@@ -404,6 +404,37 @@
       </div>
 
 
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--restore" data-modal="restore">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <div class="modal-restore">
+          <button class="modal-restore__close-btn" type="button" aria-label="Закрыть попап" data-open-modal="entrance">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-right"></use>
+            </svg>
+            Войти или зарегестироваться
+          </button>
+          <form action="#" class="modal__form">
+            <h2 class="modal__title title title--h3">Восстановление пароля</h2>
+            <p class="modal__discriptions">Введите электронную почту на которую вы зарегистрированы, туда будет выслана ссылка на восстановление пароля</p>
+            <div class="modal__input-wrap">
+              <label class="modal__label" for="email">Электронная почта</label>
+              <input class="modal__input" type="email" id="email" name="email" placeholder="name@yandex.ru">
+            </div>
+            <a class="btn btn--primary" href="#">Восстановить пароль</a>
+          </form>
+        </div>
+        <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
       </div>
     </div>
   </div>
