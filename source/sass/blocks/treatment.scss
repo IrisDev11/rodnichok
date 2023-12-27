@@ -61,4 +61,34 @@
   .cards-block {
     padding-top: 0;
   }
+
+  &__indications-catalog {
+    padding: 40px 0 104px;
+
+    border-radius: 32px 32px 0 0;
+    background: $color-bg-black-5;
+
+    .container {
+      display: grid;
+      row-gap: 40px;
+    }
+
+    .card {
+      height: max-content;
+
+      @include vp-768 {
+        grid-template-columns: max-content auto;
+        column-gap: 24px;
+      }
+    }
+  }
+
+  &__indications-list {
+    display: grid;
+    row-gap: 16px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
 }

@@ -50,6 +50,44 @@
     }
   }
 
+  &__text--m-0 {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    color: $color-paragraph-secondary;
+    font-size: 14px;
+    line-height: 20px;
+
+    list-style: none;
+
+    @include vp-1280 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 22px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      transform: translateY(-50%);
+      left: 8px;
+      width: 3px;
+      height: 3px;
+
+      background-color: $color-paragraph-secondary;
+      border-radius: 50%;
+    }
+  }
+
   &__btn {
     width: 100%;
     justify-content: center;

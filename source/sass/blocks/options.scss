@@ -15,4 +15,13 @@
       gap: 24px;
     }
   }
+
+  .card--horizontal {
+    .card__img-wrapper {
+      @include vp-1280 {
+        width: 258px;
+        height: 176px;
+      }
+    }
+  }
 }

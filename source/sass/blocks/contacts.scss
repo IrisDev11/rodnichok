@@ -51,6 +51,7 @@
   &__map {
     position: relative;
     order: 1;
+    height: 256px;
     margin-bottom: 24px;
 
     @include vp-768 {
@@ -62,6 +63,11 @@
 
     @include vp-1024 {
       max-width: none;
+      height: 360px;
+    }
+
+    @include vp-1280 {
+      height: 400px;
     }
   }
 }
