@@ -1,11 +1,13 @@
 .icon-text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   &__icon {
     width: 24px;
     height: 24px;
     margin-right: 6px;
+    margin-top: 3px;
+    flex-shrink: 0;
   }
 
   &__text {
