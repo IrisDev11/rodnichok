@@ -1,5 +1,6 @@
 .сharacteristic {
-  width: 196px;
+  max-width: 196px;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@
   .icon-text__icon {
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
   }
 
   .icon-text__text {

@@ -5,7 +5,13 @@
   margin: 0 0 56px;
 
   @include vp-768 {
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
+  }
+
+  @include vp-1024 {
     grid-template-columns: 320px 1fr;
+    gap: 24px;
   }
 
   &__swiper {
@@ -13,11 +19,14 @@
     width: 100%;
     height: 190px;
     border-radius: 4px;
-    margin-right: 24px;
 
     @include vp-768 {
-      width: 320px;
+      width: 280px;
       height: 232px;
+    }
+
+    @include vp-1024 {
+      width: 320px;
     }
 
     img {
@@ -31,7 +40,7 @@
   &__сharacteristic {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: flex-start;
   }
 
