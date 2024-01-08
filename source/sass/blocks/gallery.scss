@@ -14,6 +14,10 @@
     padding: 0;
     margin: 0;
 
+    @media (max-width: 359px) {
+      grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
+
     @include vp-768 {
       grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
     }

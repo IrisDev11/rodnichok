@@ -16,6 +16,7 @@
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
 
     @include vp-768 {
       grid-template-columns: repeat(2, 1fr);
@@ -45,6 +46,17 @@
     transition: border $trans-default;
     cursor: pointer;
     outline: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
 
     @include hover-focus {
       border-bottom: 1px solid $color-text-blue;
