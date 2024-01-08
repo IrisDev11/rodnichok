@@ -17,7 +17,7 @@ const initSliderNews = () => {
         prevEl: '.news__btn--prev',
       },
       breakpoints: {
-        360: {
+        320: {
           slidesPerView: 1.2,
           spaceBetween: 12,
         },

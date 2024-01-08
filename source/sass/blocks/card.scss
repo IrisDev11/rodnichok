@@ -46,6 +46,10 @@
         border: 1px solid $color-bg-black-10;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
       }
+
+      @include vp-1024 {
+        max-height: 200px;
+      }
     }
 
     .card__content {

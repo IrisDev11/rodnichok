@@ -15,7 +15,7 @@
     margin: 0;
 
     @media (max-width: 359px) {
-      grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
     }
 
     @include vp-768 {

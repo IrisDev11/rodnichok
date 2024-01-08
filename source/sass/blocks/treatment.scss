@@ -77,8 +77,19 @@
       height: max-content;
 
       @include vp-768 {
-        grid-template-columns: max-content auto;
+        grid-template-columns: 258px auto;
         column-gap: 24px;
+      }
+    }
+
+    .card__img-wrapper {
+      @include vp-768 {
+        max-width: 258px;
+        max-height: 240px;
+      }
+
+      @include vp-1024 {
+        max-height: 240px;
       }
     }
   }

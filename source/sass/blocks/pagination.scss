@@ -65,7 +65,7 @@
     &.is-active {
       color: $color-default-white;
       pointer-events: none;
-      background: var(--brand-primary-hover, linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #06BADA);
+      background-color: $color-brand-primary-hover;
     }
   }
 }
