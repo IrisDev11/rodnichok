@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const initVideoPlay = () => {
   const videoPlayer = document.querySelector('[data-video="video-player"]');
 

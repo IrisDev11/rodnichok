@@ -1,6 +1,6 @@
 .card-number {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   gap: 24px;
   margin: 0 0 56px;
 
@@ -42,6 +42,10 @@
     gap: 24px;
     // flex-wrap: wrap;
     align-items: flex-start;
+
+    @media (max-width: 445px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__btn {

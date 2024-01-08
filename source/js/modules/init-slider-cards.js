@@ -2,10 +2,11 @@ const initSliderCards = () => {
   if (document.querySelector('.card-number__swiper')) {
     // eslint-disable-next-line no-new, no-unused-vars, no-undef
     let swp = new Swiper('.card-number__swiper', {
-      observer: true,
-      speed: 1e3,
-      infinite: false,
-      slidesPerView: 1,
+      // observer: true,
+      // speed: 1e3,
+      // infinite: false,
+      slidesPerView: 'auto',
+      // slidesPerView: 1,
       spaceBetween: 0,
       loop: false,
       navigation: {
